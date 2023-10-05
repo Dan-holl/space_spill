@@ -2,6 +2,7 @@ import math
 import random
 import pygame
 from pygame import mixer
+pygame.mixer.init()
 
 # Initialize the pygame
 pygame.init()
@@ -13,7 +14,7 @@ screen = pygame.display.set_mode((800, 600))
 background = pygame.image.load('background.png')
 
 # Sound
-mixer.music.load("background.wav")
+mixer.music.load("song.mp3")
 mixer.music.play(-1)
 
 # Caption and Icon
